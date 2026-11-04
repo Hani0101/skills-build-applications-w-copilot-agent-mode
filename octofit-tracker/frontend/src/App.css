@@ -1,0 +1,32 @@
+:root {
+  color: #17324d;
+  background: #f4f8fb;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  min-width: 320px;
+  background: linear-gradient(135deg, #f4f8fb 0%, #e8f2f8 100%);
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-hero {
+  background: linear-gradient(135deg, #17324d, #176b87);
+  color: #fff;
+}
+
+.app-content {
+  padding-top: 2rem;
+}
+
+.content-card {
+  border: 0;
+  box-shadow: 0 0.75rem 2rem rgba(23, 50, 77, 0.1);
+}
+
+.table thead th {
+  white-space: nowrap;
+}
