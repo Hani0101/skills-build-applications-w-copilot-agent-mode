@@ -1,8 +1,11 @@
 import { Router } from 'express';
-import { createActivity, createTeam, getLeaderboard, listActivities, listTeams, suggestWorkouts } from '../services/octofitService.js';
+import { createActivity, createTeam, getLeaderboard, listActivities, listTeams, listUsers, suggestWorkouts } from '../services/octofitService.js';
 
 export const apiRouter = Router();
 
+apiRouter.get('/users', async (_request, response, next) => {
+  try { response.json({ users: await listUsers() }); } catch (error) { next(error); }
+});
 apiRouter.get('/activities', async (_request, response, next) => {
   try { response.json({ activities: await listActivities() }); } catch (error) { next(error); }
 });
