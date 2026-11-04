@@ -1,0 +1,1 @@
+# OctoFit Tracker runs on Node.js; no Python packages are required.
